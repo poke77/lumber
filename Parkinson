@@ -1,0 +1,185 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local open = Instance.new("TextButton")
+local green = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+open.Name = "open"
+open.Parent = ScreenGui
+open.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+open.BorderColor3 = Color3.fromRGB(255, 255, 0)
+open.Position = UDim2.new(0.719387829, 0, 0.0577689074, 0)
+open.Size = UDim2.new(0, 86, 0, 18)
+open.Font = Enum.Font.GothamSemibold
+open.Text = "OPEN HUB"
+open.TextColor3 = Color3.fromRGB(0, 0, 0)
+open.TextSize = 16.000
+
+green.Name = "green"
+green.Parent = ScreenGui
+green.Active = true
+green.Draggable = true
+green.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+green.BorderColor3 = Color3.fromRGB(255, 255, 0)
+green.Position = UDim2.new(0.233654037, 0, 0.057656154, 0)
+green.Size = UDim2.new(0, 325, 0, 455)
+green.Visible = false
+
+function ToggleGui()
+    green.Visible = not green.Visible
+    open.Visible = not open.Visible
+end
+open.MouseButton1Click:Connect(ToggleGui) -- Open
+close.MouseButton1Click:Connect(ToggleGui) -- Close
+
+TextLabel.Parent = green
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 136, 0)
+TextLabel.Size = UDim2.new(0, 275, 0, 44)
+TextLabel.Text = "GreenTea_HUB45"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 15.000
+
+TextButton.Parent = green
+TextButton.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+TextButton.Position = UDim2.new(0.0500566214, 0, 0.140905768, 0)
+TextButton.Size = UDim2.new(0, 133, 0, 40)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Lumber Joke"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/PdKzxqvn", true))()
+end)
+
+TextButton_2.Parent = green
+TextButton_2.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+TextButton_2.Position = UDim2.new(0.540849626, 0, 0.140905797, 0)
+TextButton_2.Size = UDim2.new(0, 133, 0, 40)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "TP Bypass"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+TextButton_2.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/XXMMfhXW", true))()
+end)
+
+close.Name = "close"
+close.Parent = green
+close.BackgroundColor3 = Color3.fromRGB(0, 136, 0)
+close.BorderColor3 = Color3.fromRGB(0, 136, 0)
+close.Position = UDim2.new(0.852307677, 0, 0, 0)
+close.Size = UDim2.new(0, 48, 0, 44)
+close.Font = Enum.Font.GothamBold
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 45.000
+
+TextButton_3.Parent = green
+TextButton_3.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+TextButton_3.Position = UDim2.new(0.0500566214, 0, 0.288610429, 0)
+TextButton_3.Size = UDim2.new(0, 133, 0, 40)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "RAM HUB"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+TextButton_3.MouseButton1Click:connect(function()
+	loadstring(game:GetObjects("rbxassetid://4515871345")[1].Source)()
+end)
+
+TextButton_4.Parent = green
+TextButton_4.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+TextButton_4.Position = UDim2.new(0.540849626, 0, 0.288610429, 0)
+TextButton_4.Size = UDim2.new(0, 133, 0, 40)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "LT2 GUI"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+TextButton_4.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/K3Cmffmm", true))()
+end)
+
+TextButton_5.Parent = green
+TextButton_5.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+TextButton_5.Position = UDim2.new(0.540849626, 0, 0.432428092, 0)
+TextButton_5.Size = UDim2.new(0, 133, 0, 40)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "BP art"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+TextButton.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/AbMkpK30", true))()
+end)
+
+TextButton_6.Parent = green
+TextButton_6.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+TextButton_6.Position = UDim2.new(0.0500566214, 0, 0.432428092, 0)
+TextButton_6.Size = UDim2.new(0, 133, 0, 40)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "SAO GUI V 0.1"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextSize = 14.000
+TextButton_6.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/j89vzqEj", true))()
+end)
+
+TextButton_7.Parent = green
+TextButton_7.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+TextButton_7.Position = UDim2.new(0.0500566214, 0, 0.580132723, 0)
+TextButton_7.Size = UDim2.new(0, 133, 0, 40)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "Zypher"
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextSize = 14.000
+TextButton_7.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/xTheAlex14/zypher/master/zypherupdatednew'),true))()
+end)
+
+TextButton_8.Parent = green
+TextButton_8.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+TextButton_8.Position = UDim2.new(0.540849626, 0, 0.580132723, 0)
+TextButton_8.Size = UDim2.new(0, 133, 0, 40)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "RICH GUI 2.0"
+TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.TextSize = 14.000
+TextButton_8.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/BwrDZruX", true))()
+end)
+
+TextLabel_2.Parent = green
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+TextLabel_2.Position = UDim2.new(0.0548195243, 0, 0.717879474, 0)
+TextLabel_2.Size = UDim2.new(0, 290, 0, 45)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Gaming_HD45 (MR. HELPY)#8146 As GUI Maker"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 12.000
+
+TextLabel_3.Parent = green
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+TextLabel_3.Position = UDim2.new(0.0548195243, 0, 0.862606227, 0)
+TextLabel_3.Size = UDim2.new(0, 290, 0, 45)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Alpha_1004#8651 As The Tester"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 19.000
